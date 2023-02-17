@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Cleaning.belongsTo(models.Dog, {
-        foreignKey: 'dogId'
+        foreignKey: 'dogId',
       })
     }
   }
